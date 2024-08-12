@@ -1,0 +1,121 @@
+@use "./config";
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $light-gray;
+  background-color: #fff;
+  z-index: 1000;
+  height: $nav-height;
+}
+
+.logo {
+  font-family: "Qwigley", cursive;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+
+  span {
+    font-family: "Qwigley", cursive;
+    color: $tertiary-color;
+  }
+}
+
+.navigation-links {
+  flex: 1;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  color: $gray;
+  font-weight: 300;
+  position: relative;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  &.active {
+    color: $primary-color;
+  }
+
+  &.active::after {
+    content: "";
+    height: 3px;
+    background-color: $primary-color;
+    width: 60%;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.navigation-profile {
+  i {
+    color: $tertiary-color;
+    margin-right: 0.3rem;
+  }
+
+  .nav-points {
+    color: $gray;
+  }
+
+  .ranking {
+    color: $gray;
+    text-transform: lowercase;
+  }
+}
+
+.profile-image {
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+// menu
+.menu-profile-container {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.menu-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-profile-name {
+  margin: 0.5rem;
+  color: $primary-color;
+}
+
+.menu-profile-email {
+  color: $gray;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.menu-profile-school {
+  margin: 0.5rem;
+  font-weight: 300;
+  color: $gray;
+  font-size: 0.9rem;
+}
+
+.menu-profile-buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-profile-logout {
+  margin-top: 1rem;
+}

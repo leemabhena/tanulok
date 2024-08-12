@@ -1,0 +1,94 @@
+@import "./config";
+
+.auth-container {
+  height: 100vh;
+
+  .login-logo {
+    margin: 0;
+  }
+
+  .auth-image {
+    background-image: url(/images/login.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.login-form-container,
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form,
+.register-form {
+  border: 2px solid $light-gray;
+  padding: 3rem;
+  margin: 4rem;
+  width: 30rem;
+  text-align: center;
+  border-radius: 1rem;
+
+  .login-heading {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .login-or {
+    margin: 1.5rem 0 1rem 0;
+    color: $gray;
+    font-weight: 300;
+  }
+
+  .google-sign-in {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-family: "Poppins";
+  }
+
+  .login-text-field {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .login-remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .forgot-pass {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: 300;
+    color: $blue;
+  }
+
+  .remember-me span {
+    font-size: 0.9rem;
+  }
+
+  .login-buttons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// Registration form
+.register-form {
+  width: 35rem;
+  padding: 1rem 2rem;
+
+  .text-field-mr {
+    margin-right: 1rem;
+  }
+}
+
+.register-textfields-inline {
+  display: flex;
+}

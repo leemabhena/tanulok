@@ -1,0 +1,37 @@
+@import "./config";
+
+@import "./navigation";
+
+@import "./courses";
+
+@import "./footer";
+
+@import "./drawer";
+
+@import "./quizzes";
+
+@import "./login";
+
+@import "./study_ai";
+
+@import "./talking_animation";
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  transition: all ease 0.5s;
+
+  &:hover {
+    color: $tertiary-color;
+  }
+}

@@ -1,0 +1,11 @@
+$light-gray: #f1f1f1;
+
+.footer {
+  text-align: right;
+  background-color: $light-gray;
+  padding: 1rem;
+
+  .footer-text {
+    font-weight: 300;
+  }
+}
